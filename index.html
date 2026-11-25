@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Join With Us!</title>
 
 <style>
@@ -15,7 +14,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: #ffffff;
+    background: white;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -24,31 +23,21 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 700px;
     padding: 25px;
 }
 
 h1 {
     color: #222;
-    font-size: clamp(24px, 5vw, 36px);
-    margin-bottom: 30px;
-}
-
-.dancer {
-    display: block;
-    width: 220px;
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto 30px;
+    font-size: clamp(25px, 5vw, 36px);
+    margin-bottom: 35px;
 }
 
 button {
-    background-color: #2785ed;
+    background: #2785ed;
     color: white;
     border: none;
     border-radius: 12px;
-    padding: 14px 55px;
+    padding: 15px 55px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -56,13 +45,14 @@ button {
 }
 
 button:hover {
-    background-color: #1266c7;
+    background: #1266c7;
     transform: scale(1.05);
 }
 
 button:disabled {
-    background-color: #75afe9;
+    background: #75afe9;
     cursor: default;
+    transform: none;
 }
 
 #message {
@@ -70,7 +60,7 @@ button:disabled {
     color: #2785ed;
     font-size: 21px;
     font-weight: bold;
-    margin-top: 22px;
+    margin-top: 25px;
 }
 </style>
 </head>
@@ -80,12 +70,6 @@ button:disabled {
 <div class="container">
 
     <h1>Click the button to join with us</h1>
-
-    <img
-        class="dancer"
-        src="dancer.jpeg"
-        alt="Dancing man"
-    >
 
     <button id="joinButton" onclick="joinUs()">
         JOIN
